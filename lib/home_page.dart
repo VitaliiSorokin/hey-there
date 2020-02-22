@@ -66,7 +66,6 @@ class _MyHomePageState extends State<MyHomePage>
   }
 
   static Color _getRandomColor() {
-    return Color((math.Random().nextDouble() * 0xFFFFFF).toInt())
-        .withOpacity(1.0);
+    return Color(math.Random().nextInt(0xFFFFFF)).withOpacity(1.0);
   }
 }
